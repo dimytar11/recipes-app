@@ -1,3 +1,4 @@
+import { ShoppingListModule } from './shopping-list/shopping-list.module';
 import { AuthInterceptor } from './auth/auth.interceptor';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -24,8 +25,7 @@ import { RecipesModule } from './recipes/recipes.module';
   declarations: [
     AppComponent,
     HeaderComponent,
-    ShoppingListComponent,
-    ShoppingListEditComponent,
+    
     DropdownDirective,
     AuthComponent,
     LoadingSpinnerComponent,
@@ -36,7 +36,8 @@ import { RecipesModule } from './recipes/recipes.module';
     FormsModule,
     ReactiveFormsModule,
     AppRoutingModule,
-    RecipesModule
+    RecipesModule,
+    ShoppingListModule
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true },

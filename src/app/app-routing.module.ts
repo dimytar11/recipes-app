@@ -11,7 +11,7 @@ import { RecipeEditComponent } from './recipes/recipe-edit/recipe-edit.component
 const routes: Routes = [
   { path: '', redirectTo: '/recipes', pathMatch: 'full' },
   
-  { path: 'shopping-list', component: ShoppingListComponent },
+  
   { path: 'auth', component: AuthComponent}
 ];
 
